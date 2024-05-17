@@ -100,6 +100,10 @@ input {
   font-weight: lighter;
 }
 
+#glassHead {
+  color: white;
+}
+
 @media screen and (min-width: 770px) and (max-width: 1024px) {
   #headerBanner {
     width: 100%;
