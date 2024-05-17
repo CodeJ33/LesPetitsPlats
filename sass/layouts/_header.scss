@@ -1,0 +1,194 @@
+.headerIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#headerBanner {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 80vh;
+}
+
+.headerLogo {
+    position: absolute;
+    z-index: 400;
+    left: 10px;
+    top: 5px;
+    padding-left: 69px;
+    padding-top: 51px;
+}
+
+.headerHero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.headerHeroSearch {
+    z-index: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.headerHeroTitle {
+    font-size: 44px;
+    color: #FFD15B;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 60%;
+    height: 72px;
+    border-radius: 15px;
+    position: relative;
+}
+
+#searchSearchglass {
+    border-radius: 15px;
+    width: 51px;
+    height: 52px;
+    position: absolute;
+    right: 21%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    #headerBanner {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .headerLogo {
+        top: -30px;
+        left: -40px;
+    }
+
+    .headerHeroTitle {
+        font-size: 34px;
+        color: #FFD15B;
+        width: 70%;
+    }
+
+    .headerHeroSearch {
+        z-index: 400;
+        width: 100%;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    form {
+        width: 100%;
+        position: relative;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    #searchSearchglass {
+        position: relative;
+        right: 69px;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 770px) {
+    #headerBanner {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .headerLogo {
+        top: -30px;
+        left: -40px;
+    }
+
+    .headerHeroTitle {
+        font-size: 32px;
+        color: #FFD15B;
+    }
+
+    .headerHeroSearch {
+        z-index: 400;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    form {
+        position: relative;
+        top: 20px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    #searchSearchglass {
+        position: relative;
+        right: 69px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 460px) {
+    #headerBanner {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .headerLogo {
+        top: -30px;
+        left: -40px;
+    }
+
+    #logoText {
+        width: 90px;
+    }
+
+    #logoImg {
+        width: 15px;
+    }
+
+    .headerHeroTitle {
+        font-size: 21px;
+        color: #FFD15B;
+    }
+
+    input {
+        width: 78%;
+        height: 50px;
+        font-size: 10px;
+        left: 15px;
+    }
+
+    #searchSearchglass {
+        position: relative;
+        right: 26px;
+        width: 34px;
+        height: 36px;
+        font-size: 12px;
+    }
+}

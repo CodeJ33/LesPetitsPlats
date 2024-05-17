@@ -1,0 +1,59 @@
+.optionRecipe {
+    display: flex;
+    border-radius: 10px;
+    padding: 17px;
+    background-color: #ffd15b;
+}
+
+.optionZoneRecipe {
+    display: none;
+    flex-direction: row;
+    margin-left: 107px;
+    gap: 25px;
+    padding-left: 5px;
+    position: relative;
+    flex-wrap: wrap;
+    top: 96px;
+}
+
+#crossOptions {
+    display: flex;
+    padding-left: 6px;
+    padding-top: 4px;
+    position: static;
+}
+
+@media screen and (min-width: 630px) and (max-width: 770px) {
+    .optionZoneRecipe {
+        margin-left: 29px;
+        top: 128px;
+    }
+}
+
+@media (max-width: 630px) {
+    .optionZoneRecipe {
+        top: 59px;
+        margin-left: 16px;
+    }
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 991px) {
+    .optionZoneRecipe {
+        right: 66px;
+        top: 128px;
+    }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1054px) {
+    .optionZoneRecipe {
+        display: none;
+        flex-direction: row;
+        gap: 25px;
+        position: relative;
+        top: 129px;
+
+    }
+
+}

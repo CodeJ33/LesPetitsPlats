@@ -1,0 +1,183 @@
+.cardsSelection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 48px;
+    margin: 0px 104px;
+    position: relative;
+    top: 135px;
+}
+
+.divError {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pError {
+    font-size: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 731px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 21px;
+    width: 380px;
+    position: relative;
+}
+
+.cardImg {
+    margin-bottom: -33px;
+    width: 100%;
+    height: 253px;
+    object-fit: cover;
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+}
+
+.timeCard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffd15b;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.titleCard {
+    margin-top: 27px;
+    margin-left: 25px;
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+}
+
+.titleCardH3,
+.descriptionCard {
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+.descriptionCard {
+    font-family: Manrope, Arial, Sans-serif;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+    width: 291px;
+}
+
+.cardRecipeTitle,
+.ingredientsContainer {
+    margin-left: 25px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.ingredientZone {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.divIngredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredientsQuantity {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+.ingredientName {
+    font-family: Manrope, Arial, Sans-serif;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 991px) and (max-width: 1293px) {
+    .cardsSelection {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 48px;
+        column-gap: 80px;
+        top: 143px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 991px) {
+    .cardsSelection {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        gap: 20px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 93%;
+        top: 153px;
+    }
+}
+
+@media screen and (min-width: 630px) and (max-width: 770px) {
+    .cardsSelection {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 93%;
+        top: 152px;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 630px) {
+    .cardsSelection {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 0 15px;
+        top: 73px;
+        justify-items: center;
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cardsSelection {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 15px;
+        top: 73px;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .descriptionCard {
+        width: 86%;
+    }
+
+    .timeCard {
+        right: 35px;
+        margin-top: 22px;
+    }
+}

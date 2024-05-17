@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <title>Les Petits PLats</title>
+    <script
+    src="https://kit.fontawesome.com/6511c09961.js"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="scripts/fetchData.js" defer></script>
+  <script type="module" src="scripts/extractData.js" defer></script>
+  <script type="module" src="scripts/dropdown.js" defer></script>
+  <script type="module" src="scripts/dropdownDisplay.js" defer></script>
+  <script type="module" src="scripts/cardFactory.js" defer></script>
+  <script type="module" src="scripts/extractInput.js" defer></script>
+  </head>
+  <body>
+    <header class ="headerIndex">
+        <div class="headerLogo">
+        <a href="#"><img id="logoText" src="assets/header/Les petits plats.png" alt="Les Petits Plats"/>
+        <img id="logoImg" src="assets/header/Group 3.png" alt="logosecondpart"/></a>
+        </div>
+    </header>
+        <div class="headerHero">
+          <div class="headerHeroSearch">
+          <h1 class="headerHeroTitle">CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES
+          </h1>
+        </div>
+          <form>
+          <label for="search"></label>
+          <input type="search" id="search" placeholder="Rechercher une recette, un ingrédient,... ">
+          <button id="searchSearchglass"> 
+            <i id="glassHead"  class="fa-solid fa-search fa-magnifying-glass"></i>
+          </button>
+          </form>
+          <img id="headerBanner" src="assets/header/header.png" alt="photo de plat"/>
+        </div>
+    <main id="main">
+      <div class="dropdownSectionRecipe">
+        <div class="dropdownSection">
+          <div id="dropdown-1" class="dropDownDiv">
+            <span class="dropDownName">Ingrédients
+                      <button id="buttondropDown-1" class="fa fa-chevron-up arrowButton">
+                  </button>
+                </span>
+            <div id="dropDownSearchbar-1" class="dropDownSearchbar">
+                      <input id="searchbarIng" class="dropdownSearchInput" type="text">
+                      <button id="crossdropDown-1"><i class="fa-solid fa-xmark"></i></button>
+                      <button id="glassdropDown-1" class="filterGlass"> 
+                      <i class="fa-solid fa-search fa-magnifying-glass"></i>
+                      </button>
+                      <span  class="spanError">Pas d'ingrédients disponibles</span>
+                    <ul id="dropDownUl-1" class="dropdown">
+                    </ul>
+                  </div>
+          </div>
+          <div id="dropdown-2"  class="dropDownDiv">
+            <span class="dropDownName">Appareils
+                      <button id="buttondropDown-2" class="fa fa-chevron-up arrowButton">
+                  </button>
+                </span>
+            <div id="dropDownSearchbar-2" class="dropDownSearchbar">
+                      <input id="searchbarApp" class="dropdownSearchInput" type="text">
+                      <button id="crossdropDown-2"><i class="fa-solid fa-xmark"></i></button>
+                      <button id="glassdropDown-2" class="filterGlass"> 
+                      <i class="fa-solid fa-search fa-magnifying-glass"></i>
+                      </button>
+                      <span class="spanError">Pas d'appareils disponibles</span>
+                    <ul id="dropDownUl-2" class="dropdown">
+                    </ul>
+                  </div>
+          </div>
+          <div id="dropdown-3" class="dropDownDiv">
+            <span class="dropDownName">Ustensils
+                      <button id="buttondropDown-3"  class="fa fa-chevron-up arrowButton">
+                  </button>
+                </span>
+            <div id="dropDownSearchbar-3" class="dropDownSearchbar">
+                      <input id="searchbarUst" class="dropdownSearchInput" type="text">
+                      <button id="crossdropDown-3"><i class="fa-solid fa-xmark"></i></button>
+                      <button id="glassdropDown-3" class="filterGlass"> 
+                      <i class="fa-solid fa-search fa-magnifying-glass"></i>
+                      </button>
+                      <span  class="spanError">Pas d'ustensiles disponibles</span>
+                    <ul id="dropDownUl-3" class="dropdown">
+                    </ul>
+                  </div>
+          </div>
+        </div>
+        <div class="recipeField"></div> 
+      </div>
+        <div class="optionZoneRecipe"></div>
+        <section class="cardsSelection">
+          
+          
+        </section>
+    </main>
+    <script ></script>
+    <script></script>
+  </body>
+</html>

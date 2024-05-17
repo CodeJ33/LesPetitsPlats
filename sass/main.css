@@ -1,0 +1,665 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;300;400;500;600;700;800&family=Raleway:wght@400;600&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #EDEDED;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+h3,
+ul,
+li {
+  font-family: "Manrope", sans-serif;
+  color: grey;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#headerBanner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 80vh;
+}
+
+.headerLogo {
+  position: absolute;
+  z-index: 400;
+  left: 10px;
+  top: 5px;
+  padding-left: 69px;
+  padding-top: 51px;
+}
+
+.headerHero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.headerHeroSearch {
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.headerHeroTitle {
+  font-size: 44px;
+  color: #FFD15B;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 60%;
+  height: 72px;
+  border-radius: 15px;
+  position: relative;
+}
+
+#searchSearchglass {
+  border-radius: 15px;
+  width: 51px;
+  height: 52px;
+  position: absolute;
+  right: 21%;
+}
+
+.fa-solid {
+  color: white;
+  font-weight: lighter;
+}
+
+#searchSearchglass {
+  font-size: 20px;
+  background-color: black;
+}
+
+#glassHead {
+  color: white;
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  #headerBanner {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 56vw;
+  }
+  .headerHeroTitle {
+    font-size: 34px;
+    color: #FFD15B;
+    text-align: center;
+    width: 70%;
+  }
+  .headerHeroSearch {
+    z-index: 400;
+    width: 100%;
+    position: relative;
+    width: auto;
+  }
+  input {
+    width: 70%;
+  }
+  form {
+    width: 90%;
+  }
+}
+/*@media screen and (min-width: 280px) and (max-width: 770px) {
+
+    .headerHero {
+        height: fit-content;
+    }
+
+    .headerLogo img {
+        height: 16px;
+        padding-top: 0px;
+    }
+
+    #headerBanner {
+
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 62vh;
+    }
+
+
+    .headerHeroSearch {
+        z-index: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        position: relative;
+        width: auto;
+    }
+
+    .headerHeroTitle {
+        font-size: 24px;
+        color: #FFD15B;
+        text-align: center;
+        width: 70%;
+    }
+
+    .headerLogo {
+        padding-left: 27px;
+    }
+
+}
+*/
+/* Drop Down */
+.dropdownSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 1000;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  gap: 20px;
+}
+
+.dropDownDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 188px;
+  background-color: white;
+  border-radius: 11px;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 45px;
+}
+
+.dropDownName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+
+.dropdownSearchInput {
+  height: 36px;
+  border-radius: 0px;
+  width: 75%;
+  display: none;
+  position: relative;
+  border: 1px solid #C6C6C6;
+  padding: 0 10px;
+}
+
+.dropDownSearchbar {
+  display: flex;
+  flex-direction: column;
+  /*  padding: 10px; */
+  align-items: center;
+  display: none;
+  position: relative;
+}
+
+.spanError {
+  position: relative;
+  display: none;
+  padding: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  color: red;
+  font-size: 10px;
+}
+
+.spanError .hidden {
+  display: hidden;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.filterGlass {
+  border: none;
+  background-color: transparent;
+}
+
+#crossdropDown-1 {
+  position: absolute;
+  left: 134px;
+  top: 23px;
+  visibility: hidden;
+}
+
+#crossdropDown-2 {
+  position: absolute;
+  left: 134px;
+  top: 23px;
+  visibility: hidden;
+}
+
+#crossdropDown-3 {
+  position: absolute;
+  left: 134px;
+  top: 23px;
+  visibility: hidden;
+}
+
+#glassdropDown-1 {
+  position: absolute;
+  left: 147px;
+  top: 14px;
+}
+
+#glassdropDown-2 {
+  position: absolute;
+  left: 147px;
+  top: 14px;
+}
+
+#glassdropDown-3 {
+  position: absolute;
+  left: 147px;
+  top: 14px;
+}
+
+.arrowButton.open {
+  transform: rotate(180deg);
+}
+
+.arrowButton:not(.open) {
+  transform: rotate(0);
+}
+
+li {
+  border-bottom-width: 1px;
+  padding-bottom: 5px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+ul.dropdown {
+  background-color: white;
+  color: black;
+  border-radius: 11px;
+  position: relative;
+  list-style: none;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  max-height: 210px;
+  min-height: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+ul.dropdown::-webkit-scrollbar {
+  width: 0.5em;
+  /* Ajustez la largeur de la barre de défilement selon vos besoins */
+}
+
+ul.dropdown::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Couleur de l'arrière-plan de la piste */
+}
+
+ul.dropdown::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Couleur de la poignée de défilement */
+  border-radius: 0;
+  /* Bordure de la poignée de défilement, 0 pour une apparence plate */
+}
+
+ul.dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+  /* Couleur de la poignée de défilement au survol */
+}
+
+.hidden {
+  display: none;
+  padding: 0;
+}
+
+.buttonlidropdown {
+  background-color: transparent;
+  border-radius: none;
+  width: inherit;
+  height: inherit;
+  position: static;
+  border: none;
+}
+
+.arrowButton.open {
+  transform: rotate(180deg);
+}
+
+.arrowButton.close {
+  transform: rotate(0deg);
+}
+
+li {
+  border-bottom-width: 1px;
+  padding-bottom: 5px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.recipeField {
+  text-align: end;
+  font-family: "Anton", sans-serif;
+  margin-left: 0;
+  padding-top: 18px;
+}
+
+ul.dropdown.hidden {
+  display: none;
+  height: 0px;
+  padding: 0;
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .dropdownSection {
+    width: 60%;
+    top: 63vw;
+  }
+  .dropDownDiv {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 188px;
+    background-color: white;
+    border-radius: 11px;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  .recipeField {
+    text-align: end;
+    font-family: "Anton", sans-serif;
+    margin-left: 0;
+    padding-top: 18px;
+    position: relative;
+    bottom: 70px;
+    right: 495px;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 770px) {
+  .dropdownSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1000;
+    width: 40%;
+  }
+  .dropDownDiv {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 188px;
+    background-color: white;
+    border-radius: 11px;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  .recipeField {
+    text-align: end;
+    font-family: "Anton", sans-serif;
+    margin-left: 0;
+    padding-top: 18px;
+    position: relative;
+    bottom: 70px;
+    right: 495px;
+    font-size: 12px;
+  }
+}
+.cardsSelection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 48px;
+  margin: 55px 104px;
+  position: relative;
+  top: 150px;
+}
+
+.divError {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pError {
+  font-size: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 731px;
+  gap: 20px;
+  background-color: white;
+  border-radius: 21px;
+  width: 380px;
+}
+
+.cardImg {
+  margin-bottom: -33px;
+  width: 380px;
+  height: 253px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 21px;
+  border-top-left-radius: 21px;
+  position: relative;
+}
+
+.timeCard {
+  position: relative;
+  border-radius: 14px;
+  text-align: center;
+  display: block;
+  background-color: #ffd15b;
+  left: 273px;
+  bottom: 211px;
+  width: 63px;
+  height: 22px;
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.titleCard {
+  margin-top: 0;
+  margin-left: 25px;
+  margin-bottom: -15px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+}
+
+.titleCardH3,
+.descriptionCard {
+  margin-left: 25px;
+  font-size: 12px;
+}
+
+.descriptionCard {
+  font-family: Manrope, Arial, Sans-serif;
+  font-size: 14px;
+  /* max-width: 318px; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  width: 291px;
+}
+
+.cardRecipeTitle {
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+.ingredientZone {
+  display: grid;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* padding-bottom: 20px; */
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ingredientsContainer {
+  margin-left: 25px;
+}
+
+.divIngredients {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredientsQuantity {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.ingredientName {
+  font-family: Manrope, Arial, Sans-serif;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .cardsSelection {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+    -moz-column-gap: 44px;
+         column-gap: 44px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding-top: 18vw;
+    top: 30vw;
+    position: relative;
+    margin-top: 30px;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardImg {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 770px) {
+  .cardsSelection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 20px;
+    margin: 55px auto;
+    /* Centrer la grille horizontalement */
+    padding: 0 15px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 731px;
+    gap: 20px;
+    background-color: white;
+    border-radius: 21px;
+    width: 100%;
+  }
+  .cardImg {
+    margin-bottom: -33px;
+    height: 253px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+    position: relative;
+    width: 100%;
+  }
+}
+.timeCard {
+  left: 152px;
+}
+
+.optionRecipe {
+  display: flex;
+  border-radius: 10px;
+  padding: 17px;
+  background-color: #ffd15b;
+}
+
+.optionZoneRecipe {
+  display: none;
+  flex-direction: row;
+  margin-left: 93px;
+  gap: 25px;
+  padding-left: 5px;
+  position: absolute;
+  padding-top: 80px;
+}
+
+#crossOptions {
+  display: flex;
+  padding-left: 6px;
+  position: static;
+}/*# sourceMappingURL=main.css.map */
