@@ -15,7 +15,8 @@ le premier avec une boucle native (for, while...) et l'autre avec une boucle fon
 
 <h2>Informations</h2>
 
--L'algorithme avec un boucle native se trouve sur la branche "boucles".
+-L'algorithme avec une boucle native se trouve sur la branche "boucles".
+
 -L'algorithme avec "boucle fonctionnelle" se trouve sur la branche "array".
 
 
