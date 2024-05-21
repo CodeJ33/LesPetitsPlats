@@ -4,7 +4,7 @@
 
 Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois. 
 
-<h2>Ojectifs :</h2>h2>
+<h2>Ojectifs :</h2>
 
 Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
 le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).
