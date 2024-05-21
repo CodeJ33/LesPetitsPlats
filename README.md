@@ -11,7 +11,7 @@ le premier avec une boucle native (for, while...) et l'autre avec une boucle fon
 
 -Définir quel algorithme est le plus performant.
 
--Respecter le design de la maquette Figma.
+-Respecter le design de la maquette [Figma](https://www.figma.com/design/LY5VQTAqnrAf0bWObOBrt8/Les-petits-plats---Maquette-2.0)
 
 ## Informations :
 
