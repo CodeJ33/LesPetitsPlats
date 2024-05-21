@@ -6,9 +6,11 @@ Vous êtes freelance et vous venez d’être missionné par l’entreprise “Le
 
 <h2>Ojectifs :</h2>
 
-Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
+-Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
 le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).
 
-Respecter le design de la maquette Figma.
+-Définir quel algorithme est le plus performant.
+
+-Respecter le design de la maquette Figma.
 
   
