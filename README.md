@@ -6,18 +6,18 @@ Vous êtes freelance et vous venez d’être missionné par l’entreprise “Le
 
 ## Objectifs :
 
--Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
+* Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
 le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).
 
--Définir quel algorithme est le plus performant.
+* Définir quel algorithme est le plus performant.
 
--Respecter le design de la maquette [Figma](https://www.figma.com/design/LY5VQTAqnrAf0bWObOBrt8/Les-petits-plats---Maquette-2.0)
+* Respecter le design de la maquette [Figma](https://www.figma.com/design/LY5VQTAqnrAf0bWObOBrt8/Les-petits-plats---Maquette-2.0)
 
 ## Informations :
 
--L'algorithme avec une boucle native se trouve sur la branche "boucles".
+* L'algorithme avec une boucle native se trouve sur la branche "boucles".
 
--L'algorithme avec "boucle fonctionnelle" se trouve sur la branche "array".
+* L'algorithme avec "boucle fonctionnelle" se trouve sur la branche "array".
 
 
 
