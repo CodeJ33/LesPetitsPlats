@@ -1,10 +1,10 @@
 # Projet 7 : Les Petits Plats
 
-<h2>Description du projet :</h2>
+## Description du projet :
 
 Vous êtes freelance et vous venez d’être missionné par l’entreprise “Les petits plats” en temps que Développeur Front-end pour une mission de 3 mois. 
 
-<h2>Objectifs :</h2>
+## Objectifs :
 
 -Création de deux algorithmes de recherche pour obtenir la version la plus optimale:
 le premier avec une boucle native (for, while...) et l'autre avec une boucle fonctionnelle (forEach, map).
@@ -13,7 +13,7 @@ le premier avec une boucle native (for, while...) et l'autre avec une boucle fon
 
 -Respecter le design de la maquette Figma.
 
-<h2>Informations</h2>
+## Informations :
 
 -L'algorithme avec une boucle native se trouve sur la branche "boucles".
 
