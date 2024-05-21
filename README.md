@@ -1,4 +1,4 @@
-<h1>Projet 7 : Les Petits Plats</h1>
+# Projet 7 : Les Petits Plats
 
 <h2>Description du projet :</h2>
 
